@@ -193,7 +193,7 @@ const WhyChoose = () => {
               viewport={{ once: true }}
               className="text-center p-6 rounded-xl hover:bg-gray-50 transition-colors duration-300"
             >
-              <div className="text-4xl mb-4">{reason.icon}</div>
+              <reason.icon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-bold text-gray-900 mb-3">{reason.title}</h3>
               <p className="text-gray-600">{reason.description}</p>
             </motion.div>
