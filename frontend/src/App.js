@@ -368,7 +368,7 @@ const Contact = () => {
             Ready to Transform Your Aircraft?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Get a free quote today and experience the JetRite difference. Professional, reliable, and trusted by aviation professionals nationwide.
+            Get a free quote today and experience the JetRite difference. Personal service you can trust for your aircraft.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
