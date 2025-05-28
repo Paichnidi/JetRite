@@ -437,8 +437,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>(555) 123-4567</li>
-              <li>info@jetrite.com</li>
+              <li>(706) 699-3810</li>
+              <li>JetRiteDetailing@gmail.com</li>
               <li>Local Service Area</li>
               <li>Available by Appointment</li>
             </ul>
