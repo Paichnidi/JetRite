@@ -289,16 +289,16 @@ const TargetAudience = () => {
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Michael Richardson",
-      role: "Private Jet Owner",
+      name: "Tom Anderson",
+      role: "Cessna 172 Owner",
       image: "https://images.unsplash.com/photo-1444313431167-e7921088a9d3",
-      quote: "JetRite transformed my Gulfstream G650. The attention to detail is incredible, and the team is completely trustworthy with such valuable aircraft."
+      quote: "JetRite gave my 172 the care it deserved. Their attention to detail is incredible, and they treat your aircraft like it's their own."
     },
     {
-      name: "Sarah Martinez",
-      role: "FBO Manager",
+      name: "Linda Martinez",
+      role: "Flight Club Manager",
       image: "https://images.unsplash.com/photo-1605590427165-3884d6aa6731",
-      quote: "We've partnered with JetRite for our fleet services for over 3 years. Their reliability and quality are unmatched in the industry."
+      quote: "We've used JetRite for our club's Piper Cherokee for over a year. Their reliability and personal touch make all the difference."
     }
   ];
 
