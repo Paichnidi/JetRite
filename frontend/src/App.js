@@ -176,10 +176,10 @@ const WhyChoose = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Aircraft Owners Choose JetRite
+            Why Small Aircraft Owners Choose JetRite
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Trusted by aircraft owners, FBOs, and flight clubs for our commitment to excellence and attention to detail.
+            Trusted by aircraft owners and flight clubs for our personal approach and attention to detail.
           </p>
         </motion.div>
 
