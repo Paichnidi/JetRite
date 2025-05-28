@@ -144,24 +144,24 @@ const Services = () => {
 const WhyChoose = () => {
   const reasons = [
     {
-      icon: "🏆",
-      title: "Industry Expertise",
-      description: "Over 15 years of specialized aircraft detailing experience"
+      icon: TrophyIcon,
+      title: "Small Aircraft Expertise",
+      description: "Specialized experience with Cessna, Piper, Cirrus, and light aircraft"
     },
     {
-      icon: "🔒",
-      title: "Fully Insured",
-      description: "Comprehensive insurance coverage for complete peace of mind"
+      icon: HeartIcon,
+      title: "Customer-First Approach",
+      description: "Personal attention and trustworthy customer care every time"
     },
     {
-      icon: "⚡",
-      title: "Fast Turnaround",
-      description: "Efficient service without compromising on quality"
+      icon: BoltIcon,
+      title: "Quick Turnaround",
+      description: "Efficient service that respects your time and schedule"
     },
     {
-      icon: "📱",
+      icon: DevicePhoneMobileIcon,
       title: "Mobile Service",
-      description: "We come to your hangar or preferred location"
+      description: "We come to your hangar or preferred location for your convenience"
     }
   ];
 
