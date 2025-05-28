@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
 import "./App.css";
+import { 
+  TrophyIcon, 
+  HeartIcon, 
+  BoltIcon, 
+  DevicePhoneMobileIcon,
+  CheckIcon 
+} from '@heroicons/react/24/outline';
 
 // Hero Section Component
 const Hero = () => {
