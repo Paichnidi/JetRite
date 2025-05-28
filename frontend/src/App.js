@@ -208,22 +208,22 @@ const WhyChoose = () => {
 const TargetAudience = () => {
   const audiences = [
     {
-      title: "Aircraft Owners",
-      description: "Premium detailing services to maintain your investment's value and appearance",
+      title: "Small Aircraft Owners",
+      description: "Personalized detailing services to maintain your Cessna, Piper, or Cirrus investment",
       image: "https://images.unsplash.com/photo-1635672033267-41e2d1cb74b7",
-      benefits: ["Preserve aircraft value", "Professional appearance", "Personalized service"]
-    },
-    {
-      title: "FBOs & Operators",
-      description: "Reliable commercial detailing partnerships for your fleet maintenance needs",
-      image: "https://images.unsplash.com/photo-1564069057260-0f30181cff68",
-      benefits: ["Fleet pricing", "Scheduled maintenance", "Quick turnaround"]
+      benefits: ["Preserve aircraft value", "Personal attention", "Flexible scheduling"]
     },
     {
       title: "Flight Clubs",
-      description: "Cost-effective group packages designed for shared aircraft ownership",
+      description: "Affordable group packages designed for shared aircraft ownership and club operations",
       image: "https://images.unsplash.com/photo-1603466182140-36c4c9d6a10d",
-      benefits: ["Group discounts", "Flexible scheduling", "Member benefits"]
+      benefits: ["Group discounts", "Club-friendly scheduling", "Member benefits"]
+    },
+    {
+      title: "Local FBOs",
+      description: "Partnership opportunities for small FBOs serving the general aviation community",
+      image: "https://images.unsplash.com/photo-1564069057260-0f30181cff68",
+      benefits: ["Local partnership", "Quick service", "Reliable results"]
     }
   ];
 
