@@ -30,8 +30,8 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
         >
-          Premium Aircraft
-          <span className="block text-blue-400">Detailing Excellence</span>
+          Professional Aircraft
+          <span className="block text-blue-400">Detailing Services</span>
         </motion.h1>
         
         <motion.p
@@ -40,8 +40,8 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed"
         >
-          Transform your aircraft with JetRite's professional interior and exterior detailing services. 
-          Trusted by aircraft owners, FBOs, and flight clubs nationwide.
+          Tailored aircraft care for Cessna, Piper, Cirrus, and light aircraft owners. 
+          We're not a big company - we're your partner in quality and care.
         </motion.p>
 
         <motion.div
