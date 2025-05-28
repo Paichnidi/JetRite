@@ -99,7 +99,7 @@ const Services = () => {
             Professional Aircraft Care Services
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From complete exterior restoration to luxurious interior detailing, we provide comprehensive care for your aircraft.
+            From complete exterior restoration to meticulous interior detailing, we provide personalized care for your light aircraft.
           </p>
         </motion.div>
 
