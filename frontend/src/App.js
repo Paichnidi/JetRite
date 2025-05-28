@@ -439,8 +439,8 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>(555) 123-4567</li>
               <li>info@jetrite.com</li>
-              <li>Nationwide Service</li>
-              <li>Available 24/7</li>
+              <li>Local Service Area</li>
+              <li>Available by Appointment</li>
             </ul>
           </div>
         </div>
