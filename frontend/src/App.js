@@ -391,7 +391,7 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Service Areas</h4>
-              <p className="text-blue-100">Nationwide Mobile Service</p>
+              <p className="text-blue-100">Local Mobile Service</p>
             </div>
           </div>
         </motion.div>
