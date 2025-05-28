@@ -376,7 +376,7 @@ const Contact = () => {
               Get Free Quote
             </button>
             <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
-              Call (555) 123-4567
+              Call (706) 699-3810
             </button>
           </div>
 
@@ -387,7 +387,7 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Email</h4>
-              <p className="text-blue-100">info@jetrite.com</p>
+              <p className="text-blue-100">JetRiteDetailing@gmail.com</p>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Service Areas</h4>
@@ -419,8 +419,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>Exterior Detailing</li>
               <li>Interior Detailing</li>
-              <li>Premium Wax Protection</li>
-              <li>Mobile Service</li>
+              <li>Wax Protection</li>
             </ul>
           </div>
           
