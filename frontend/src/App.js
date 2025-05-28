@@ -427,10 +427,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Clients</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>Aircraft Owners</li>
-              <li>FBOs</li>
+              <li>Small Aircraft Owners</li>
               <li>Flight Clubs</li>
-              <li>Charter Companies</li>
+              <li>Local FBOs</li>
+              <li>General Aviation</li>
             </ul>
           </div>
           
