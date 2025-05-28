@@ -238,10 +238,10 @@ const TargetAudience = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Specialized Services for Every Client
+            Tailored Services for Every Client
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tailored solutions for aircraft owners, FBOs, and flight clubs with specialized packages and pricing.
+            Specialized solutions for small aircraft owners and flight clubs with personalized service and fair pricing.
           </p>
         </motion.div>
 
