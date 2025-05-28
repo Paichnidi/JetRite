@@ -313,10 +313,10 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Trusted by Aviation Professionals
+            Trusted by General Aviation Pilots
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            See why aircraft owners and operators choose JetRite for their detailing needs.
+            See why small aircraft owners and flight clubs choose JetRite for their detailing needs.
           </p>
         </motion.div>
 
