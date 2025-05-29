@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/JetRite/static/css/main.f86a74a1.css",
-    "main.js": "/JetRite/static/js/main.af7db09f.js",
-    "index.html": "/JetRite/index.html",
-    "main.f86a74a1.css.map": "/JetRite/static/css/main.f86a74a1.css.map",
-    "main.af7db09f.js.map": "/JetRite/static/js/main.af7db09f.js.map"
+    "main.css": "/static/css/main.f86a74a1.css",
+    "main.js": "/static/js/main.af7db09f.js",
+    "index.html": "/index.html",
+    "main.f86a74a1.css.map": "/static/css/main.f86a74a1.css.map",
+    "main.af7db09f.js.map": "/static/js/main.af7db09f.js.map"
   },
   "entrypoints": [
     "static/css/main.f86a74a1.css",
