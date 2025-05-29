@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Paichnidi.github.io/JetRite",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +14,8 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
