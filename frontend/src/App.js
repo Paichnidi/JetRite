@@ -68,7 +68,7 @@ const Services = () => {
     {
       title: "Exterior Detailing",
       description: "Complete exterior wash, polish, and protection for your aircraft's pristine appearance.",
-      image: "https://www.planeandpilotmag.com/images/stories/photo-gallery/full/apr-09/Diamond-DA40-XLS---Marc-Lee.jpg",
+      image: "https://planeandpilotmag.com/wp-content/uploads/sites/4/images/stories/photo-gallery/large/apr-09/Diamond-DA40-XLS---Marc-Lee.jpg",
       features: ["Paint restoration", "Surface protection", "Thorough cleaning", "Professional finish"]
     },
     {
