@@ -481,6 +481,15 @@ const Home = () => (
 
 // FIXED App component that switches between Home and QuoteForm
 function App() {
+
+  useEffect(() => {
+    const redirect = sessionStorage.redirect;
+    if (redirect) {
+      sessionStorage.removeItem("redirect");
+      window.history.replaceState(null, "", redirect);
+    }
+  }, []);
+  
   return (
     <Router>
       <Routes>
