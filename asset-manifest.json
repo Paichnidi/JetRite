@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JetRite/static/css/main.f86a74a1.css",
+    "main.js": "/JetRite/static/js/main.6df94f44.js",
+    "index.html": "/JetRite/index.html",
+    "main.f86a74a1.css.map": "/JetRite/static/css/main.f86a74a1.css.map",
+    "main.6df94f44.js.map": "/JetRite/static/js/main.6df94f44.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f86a74a1.css",
+    "static/js/main.6df94f44.js"
+  ]
+}
