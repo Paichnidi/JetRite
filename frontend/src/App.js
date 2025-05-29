@@ -15,7 +15,7 @@ const Hero = () => {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1635672033267-41e2d1cb74b7"
+          src="https://images.unsplash.com/photo-1629233650020-aa014ed76f8d"
           alt="Small Aircraft"
           className="w-full h-full object-cover"
         />
@@ -54,7 +54,7 @@ const Hero = () => {
             Get Free Quote
           </button>
           <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
-            Call (555) 123-4567
+            Call (706) 699-3810
           </button>
         </motion.div>
       </div>
@@ -68,19 +68,19 @@ const Services = () => {
     {
       title: "Exterior Detailing",
       description: "Complete exterior wash, polish, and protection for your aircraft's pristine appearance.",
-      image: "https://images.unsplash.com/photo-1635668422724-fffb2201f951",
+      image: "https://www.planeandpilotmag.com/images/stories/photo-gallery/full/apr-09/Diamond-DA40-XLS---Marc-Lee.jpg",
       features: ["Paint restoration", "Surface protection", "Thorough cleaning", "Professional finish"]
     },
     {
       title: "Interior Detailing",
       description: "Deep cleaning and restoration of cockpit, cabin, and all interior surfaces.",
-      image: "https://images.pexels.com/photos/4090093/pexels-photo-4090093.jpeg",
+      image: "https://cirrusaircraft.com/wp-content/uploads/2025/05/titan-over-white-sr-series-g7-aircraft-2-1201x771-9aea37c-3-768x493.png",
       features: ["Leather treatment", "Carpet cleaning", "Surface sanitization", "Odor elimination"]
     },
     {
-      title: "Premium Wax Protection",
+      title: "Wax Protection",
       description: "Advanced wax application for long-lasting protection and brilliant shine.",
-      image: "https://images.pexels.com/photos/8532850/pexels-photo-8532850.jpeg",
+      image: "https://images.unsplash.com/photo-1593938346024-7ee982d8224b?w=500w",
       features: ["UV protection", "Weather resistance", "Enhanced shine", "6-month guarantee"]
     }
   ];
@@ -210,19 +210,19 @@ const TargetAudience = () => {
     {
       title: "Small Aircraft Owners",
       description: "Personalized detailing services to maintain your Cessna, Piper, or Cirrus investment",
-      image: "https://images.unsplash.com/photo-1635672033267-41e2d1cb74b7",
+      image: "https://images.unsplash.com/photo-1541611292906-15e4b710712f?q=80&w",
       benefits: ["Preserve aircraft value", "Personal attention", "Flexible scheduling"]
     },
     {
       title: "Flight Clubs",
       description: "Affordable group packages designed for shared aircraft ownership and club operations",
-      image: "https://images.unsplash.com/photo-1603466182140-36c4c9d6a10d",
+      image: "https://hartzellprop.com/wp-content/uploads/GettyImages-528318037-1200x800.jpg",
       benefits: ["Group discounts", "Club-friendly scheduling", "Member benefits"]
     },
     {
       title: "Local FBOs",
       description: "Partnership opportunities for small FBOs serving the general aviation community",
-      image: "https://images.unsplash.com/photo-1564069057260-0f30181cff68",
+      image: "https://airbornavionics.com/uploads/3/4/4/1/34416072/n216ts-fbo_orig.jpg",
       benefits: ["Local partnership", "Quick service", "Reliable results"]
     }
   ];
@@ -383,15 +383,18 @@ const Contact = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <h4 className="text-xl font-bold mb-2">Call Us</h4>
-              <p className="text-blue-100">(555) 123-4567</p>
+              <p className="text-blue-100">(706) 699-3810</p>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Email</h4>
-              <p className="text-blue-100">JetRiteDetailing@gmail.com</p>
+              <p className="text-blue-100"><a href="https://mail.google.com/mail/u/0/?fs=1&to=jetritedetailing@gmail.com&su=Plane%20Detailing&body=Hi%20JetRite%20Team%2C%0A%0AI%E2%80%99m%20interested%20in%20scheduling%20aircraft%20detailing%20services.%20Here%20are%20the%20details%20of%20my%20aircraft%20and%20location%3A%0A%0A-%20Aircraft%20Type%3A%20%0A-%20Tail%20Number%20(N%23)%3A%20%0A-%20Location%20(Airport%20Name%20or%20FBO)%3A%20%0A-%20Preferred%20Date%2FTime%3A%20%0A-%20Requested%20Services%3A%20(e.g.%2C%20exterior%20wash%2C%20interior%20deep%20clean%2C%20leather%20treatment)%0A-%20Additional%20Notes%3A%20%0A%0APlease%20let%20me%20know%20availability%2C%20pricing%2C%20and%20any%20other%20information%20needed%20to%20confirm%20the%20appointment.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D%0A%5BPhone%20Number%5D%0A%5BEmail%5D&tf=cm"
+              target="_blank" 
+              className="underline text-blue-100"
+              rel="noopener noreferrer">JetRiteDetailing@gmail.com</a></p>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Service Areas</h4>
-              <p className="text-blue-100">Local Mobile Service</p>
+              <p className="text-blue-100">Thompson | Augusta | Greene County</p>
             </div>
           </div>
         </motion.div>
@@ -438,7 +441,7 @@ const Footer = () => {
             <ul className="space-y-2 text-gray-300">
               <li>(706) 699-3810</li>
               <li>JetRiteDetailing@gmail.com</li>
-              <li>Local Service Area</li>
+              <li>Thompson | Augusta | Greene County </li>
               <li>Available by Appointment</li>
             </ul>
           </div>

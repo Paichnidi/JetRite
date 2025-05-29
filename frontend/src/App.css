@@ -91,6 +91,10 @@ button:focus {
   background: #64748b;
 }
 
+.text-xl {
+  font-size: 1.125rem !important;
+}
+
 /* Responsive text scaling */
 @media (max-width: 768px) {
   h1 {
@@ -101,9 +105,6 @@ button:focus {
     font-size: 2rem !important;
   }
   
-  .text-xl {
-    font-size: 1.125rem !important;
-  }
 }
 
 /* Focus styles for accessibility */
