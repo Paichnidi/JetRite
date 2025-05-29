@@ -1,5 +1,9 @@
 import { motion } from "framer-motion";
+import QuoteForm from './QuoteForm';
+import PricingPage from './PricingPage';
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 import { 
   TrophyIcon, 
   HeartIcon, 
@@ -50,9 +54,11 @@ const Hero = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
-          <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-            Get Free Quote
-          </button>
+          <Link to="/quote">
+            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+              Get Free Quote
+            </button>
+          </Link>
           <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
             Call (706) 699-3810
           </button>
@@ -273,9 +279,19 @@ const TargetAudience = () => {
                     </li>
                   ))}
                 </ul>
-                <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
-                  Get {audience.title} Quote
-                </button>
+                {audience.title === "Small Aircraft Owners" ? (
+                  <Link to="/pricing">
+                    <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                      Get {audience.title} Quote
+                    </button>
+                  </Link>
+                ) : (
+                  <Link to="/quote">
+                    <button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition-colors duration-300">
+                      Get {audience.title} Quote
+                    </button>
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}
@@ -451,18 +467,28 @@ const Footer = () => {
   );
 };
 
-// Main App Component
+const Home = () => (
+  <div className="App">
+    <Hero />
+    <Services />
+    <WhyChoose />
+    <TargetAudience />
+    <Testimonials />
+    <Contact />
+    <Footer />
+  </div>
+);
+
+// FIXED App component that switches between Home and QuoteForm
 function App() {
   return (
-    <div className="App">
-      <Hero />
-      <Services />
-      <WhyChoose />
-      <TargetAudience />
-      <Testimonials />
-      <Contact />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/quote" element={<QuoteForm />} />
+        <Route path="/pricing" element={<PricingPage />} />
+      </Routes>
+    </Router>
   );
 }
 
