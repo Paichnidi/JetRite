@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "https://www.fliterite.com/static/css/main.79838008.css",
-    "main.js": "https://www.fliterite.com/static/js/main.fdc39e56.js",
+    "main.js": "https://www.fliterite.com/static/js/main.f4b5aa7c.js",
     "index.html": "https://www.fliterite.com/index.html",
     "main.79838008.css.map": "https://www.fliterite.com/static/css/main.79838008.css.map",
-    "main.fdc39e56.js.map": "https://www.fliterite.com/static/js/main.fdc39e56.js.map"
+    "main.f4b5aa7c.js.map": "https://www.fliterite.com/static/js/main.f4b5aa7c.js.map"
   },
   "entrypoints": [
     "static/css/main.79838008.css",
-    "static/js/main.fdc39e56.js"
+    "static/js/main.f4b5aa7c.js"
   ]
 }
