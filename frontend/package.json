@@ -14,7 +14,7 @@
     "react-scripts": "5.0.1"
   },
   "scripts": {
-    "predeploy": "yarn build && echo 'https://www.fliterite.com' > build/CNAME",
+    "predeploy": "yarn build && echo 'www.fliterite.com' > build/CNAME",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
