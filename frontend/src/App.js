@@ -1,16 +1,36 @@
-import { motion } from "framer-motion";
+import React, { useEffect } from 'react';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  useNavigate,
+  useLocation
+} from 'react-router-dom';
+
+import { motion } from 'framer-motion';
+import {
+  TrophyIcon,
+  HeartIcon,
+  BoltIcon,
+  DevicePhoneMobileIcon,
+  CheckIcon
+} from '@heroicons/react/24/outline';
+
 import QuoteForm from './QuoteForm';
 import PricingPage from './PricingPage';
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import './App.css';
 
-import { 
-  TrophyIcon, 
-  HeartIcon, 
-  BoltIcon, 
-  DevicePhoneMobileIcon,
-  CheckIcon 
-} from '@heroicons/react/24/outline';
+
+function RedirectHandler() {
+  const navigate = useNavigate();
+  const { search } = useLocation();
+  useEffect(() => {
+    const redirect = new URLSearchParams(search).get('redirect');
+    if (redirect) navigate(redirect, { replace: true });
+  }, [search, navigate]);
+  return null;
+}
 
 // Hero Section Component
 const Hero = () => {
@@ -479,19 +499,11 @@ const Home = () => (
   </div>
 );
 
-// FIXED App component that switches between Home and QuoteForm
 function App() {
 
-  useEffect(() => {
-    const redirect = sessionStorage.redirect;
-    if (redirect) {
-      sessionStorage.removeItem("redirect");
-      window.history.replaceState(null, "", redirect);
-    }
-  }, []);
-  
   return (
     <Router>
+      <RedirectHandler />       {/* ← add this */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/quote" element={<QuoteForm />} />
