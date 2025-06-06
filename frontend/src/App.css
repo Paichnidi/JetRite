@@ -134,6 +134,50 @@ button:focus {
   }
 }
 
+.quoteButton {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: white;
+  background-color: #2563eb;
+  /* Tailwind blue-600 */
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+.quoteButton::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: -100%;
+  transform: skewX(-20deg);
+  transition: left 0.5s ease;
+  z-index: 0;
+}
+
+.quoteButton:hover::before {
+  left: 100%;
+}
+
+.quoteButton:active::before {
+  background: #3b82f6;
+  transition: background 0s;
+}
+
+.quoteButton>* {
+  position: relative;
+  z-index: 2;
+}
+
 /* Custom utility classes */
 .text-balance {
   text-wrap: balance;

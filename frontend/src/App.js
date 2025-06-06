@@ -75,8 +75,8 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center"
         >
           <Link to="/quote">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
-              Get Free Quote
+            <button className="quoteButton">
+              <span>Get Free Quote</span>
             </button>
           </Link>
           <button className="border-2 border-white text-white hover:bg-white hover:text-blue-900 px-8 py-4 rounded-lg text-lg font-semibold transition-all duration-300">
@@ -107,7 +107,7 @@ const Services = () => {
       title: "Wax Protection",
       description: "Advanced wax application for long-lasting protection and brilliant shine.",
       image: "https://images.unsplash.com/photo-1593938346024-7ee982d8224b?w=500w",
-      features: ["UV protection", "Weather resistance", "Enhanced shine", "6-month guarantee"]
+      features: ["UV protection", "Weather resistance", "Enhanced shine", "Protection for up to half a year"]
     }
   ];
 
@@ -166,7 +166,7 @@ const Services = () => {
   );
 };
 
-// Why Choose JetRite Section
+// Why Choose FliteRite Section
 const WhyChoose = () => {
   const reasons = [
     {
@@ -202,7 +202,7 @@ const WhyChoose = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Small Aircraft Owners Choose JetRite
+            Why Small Aircraft Owners Choose FliteRite
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Trusted by aircraft owners and flight clubs for our personal approach and attention to detail.
@@ -328,65 +328,81 @@ const Testimonials = () => {
       name: "Tom Anderson",
       role: "Cessna 172 Owner",
       image: "https://images.unsplash.com/photo-1444313431167-e7921088a9d3",
-      quote: "JetRite gave my 172 the care it deserved. Their attention to detail is incredible, and they treat your aircraft like it's their own."
+      quote:
+        "FliteRite gave my 172 the care it deserved. Their attention to detail is incredible, and they treat your aircraft like it's their own.",
     },
     {
       name: "Linda Martinez",
       role: "Flight Club Manager",
       image: "https://images.unsplash.com/photo-1605590427165-3884d6aa6731",
-      quote: "We've used JetRite for our club's Piper Cherokee for over a year. Their reliability and personal touch make all the difference."
-    }
+      quote:
+        "We've used FliteRite for our club's Piper Cherokee for over a year. Their reliability and personal touch make all the difference.",
+    },
   ];
 
   return (
-    <section className="py-20 bg-gray-900 text-white">
+    <section className="py-20 bg-gray-900 text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            Trusted by General Aviation Pilots
-          </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            See why small aircraft owners and flight clubs choose JetRite for their detailing needs.
-          </p>
-        </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
-              viewport={{ once: true }}
-              className="bg-gray-800 rounded-2xl p-8 hover:bg-gray-750 transition-colors duration-300"
-            >
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-full h-full object-cover"
-                  />
+        {/* Everything blurred inside here */}
+        <div className="blur-sm pointer-events-none select-none space-y-16">
+          {/* Blurred Heading and Subheading */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+              Trusted by General Aviation Pilots
+            </h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              See why small aircraft owners and flight clubs choose FliteRite for their detailing needs.
+            </p>
+          </motion.div>
+
+          {/* Blurred Testimonials */}
+          <div className="grid lg:grid-cols-2 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: index * 0.2 }}
+                viewport={{ once: true }}
+                className="bg-gray-800 rounded-2xl p-8"
+              >
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 rounded-full overflow-hidden mr-4">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h4 className="text-xl font-bold">{testimonial.name}</h4>
+                    <p className="text-blue-400">{testimonial.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold">{testimonial.name}</h4>
-                  <p className="text-blue-400">{testimonial.role}</p>
-                </div>
-              </div>
-              <p className="text-gray-300 text-lg leading-relaxed">"{testimonial.quote}"</p>
-            </motion.div>
-          ))}
+                <p className="text-gray-300 text-lg leading-relaxed">"{testimonial.quote}"</p>
+              </motion.div>
+            ))}
+          </div>
         </div>
+
+        {/* Overlay Text */}
+        <div className="absolute inset-0 flex items-center justify-center z-10 bg-gray-900/70 backdrop-blur-sm rounded-2xl">
+          <h3 className="text-4xl font-bold text-white">Testemonials Coming Soon</h3>
+        </div>
+
       </div>
     </section>
   );
+  
 };
+
 
 // Contact Section
 const Contact = () => {
@@ -404,7 +420,7 @@ const Contact = () => {
             Ready to Transform Your Aircraft?
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
-            Get a free quote today and experience the JetRite difference. Personal service you can trust for your aircraft.
+            Get a free quote today and experience the FliteRite difference. Personal service you can trust for your aircraft.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -423,14 +439,14 @@ const Contact = () => {
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Email</h4>
-              <p className="text-blue-100"><a href="https://mail.google.com/mail/u/0/?fs=1&to=jetritedetailing@gmail.com&su=Plane%20Detailing&body=Hi%20JetRite%20Team%2C%0A%0AI%E2%80%99m%20interested%20in%20scheduling%20aircraft%20detailing%20services.%20Here%20are%20the%20details%20of%20my%20aircraft%20and%20location%3A%0A%0A-%20Aircraft%20Type%3A%20%0A-%20Tail%20Number%20(N%23)%3A%20%0A-%20Location%20(Airport%20Name%20or%20FBO)%3A%20%0A-%20Preferred%20Date%2FTime%3A%20%0A-%20Requested%20Services%3A%20(e.g.%2C%20exterior%20wash%2C%20interior%20deep%20clean%2C%20leather%20treatment)%0A-%20Additional%20Notes%3A%20%0A%0APlease%20let%20me%20know%20availability%2C%20pricing%2C%20and%20any%20other%20information%20needed%20to%20confirm%20the%20appointment.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D%0A%5BPhone%20Number%5D%0A%5BEmail%5D&tf=cm"
+              <p className="text-blue-100"><a href="https://mail.google.com/mail/u/0/?fs=1&to=fliteritedetailing@gmail.com&su=Plane%20Detailing&body=Hi%20JetRite%20Team%2C%0A%0AI%E2%80%99m%20interested%20in%20scheduling%20aircraft%20detailing%20services.%20Here%20are%20the%20details%20of%20my%20aircraft%20and%20location%3A%0A%0A-%20Aircraft%20Type%3A%20%0A-%20Tail%20Number%20(N%23)%3A%20%0A-%20Location%20(Airport%20Name%20or%20FBO)%3A%20%0A-%20Preferred%20Date%2FTime%3A%20%0A-%20Requested%20Services%3A%20(e.g.%2C%20exterior%20wash%2C%20interior%20deep%20clean%2C%20leather%20treatment)%0A-%20Additional%20Notes%3A%20%0A%0APlease%20let%20me%20know%20availability%2C%20pricing%2C%20and%20any%20other%20information%20needed%20to%20confirm%20the%20appointment.%0A%0AThank%20you%2C%0A%5BYour%20Name%5D%0A%5BPhone%20Number%5D%0A%5BEmail%5D&tf=cm"
               target="_blank" 
               className="underline text-blue-100"
-              rel="noopener noreferrer">JetRiteDetailing@gmail.com</a></p>
+              rel="noopener noreferrer">FliteRiteDetailing@gmail.com</a></p>
             </div>
             <div>
               <h4 className="text-xl font-bold mb-2">Service Areas</h4>
-              <p className="text-blue-100">Thompson | Augusta | Greene County</p>
+              <p className="text-blue-100">Thomson | Augusta | Greene County</p>
             </div>
           </div>
         </motion.div>
@@ -446,11 +462,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">JetRite</h3>
+            <h3 className="text-2xl font-bold text-blue-400 mb-4">FliteRite</h3>
             <p className="text-gray-300 mb-4">
               Professional aircraft detailing services for small aircraft owners and flight clubs. Personal attention, quality results.
             </p>
-            <p className="text-gray-400">© 2024 JetRite. All rights reserved.</p>
+            <p className="text-gray-400">© 2024 FliteRite. All rights reserved.</p>
           </div>
           
           <div>
@@ -476,8 +492,8 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-gray-300">
               <li>(706) 699-3810</li>
-              <li>JetRiteDetailing@gmail.com</li>
-              <li>Thompson | Augusta | Greene County </li>
+              <li>FliteRiteDetailing@gmail.com</li>
+              <li>Thomson | Augusta | Greene County </li>
               <li>Available by Appointment</li>
             </ul>
           </div>
